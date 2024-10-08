@@ -21,7 +21,7 @@ PongGame/
 │   └── acm.jar
 ├── src/
 │   └── ppPackage/
-│       ├── ppBall.java
+|        ├── ppBall.java
 │       ├── ppPaddle.java
 │       ├── ppPaddleAgent.java
 │       ├── ppSim.java
