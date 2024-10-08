@@ -12,24 +12,22 @@ Download: ACM Java Libraries
 Download acm.jar:
 
 Place acm.jar inside a lib/ directory in your project folder.
-Project Structure:
 
-scss
-Copy code
-PongGame/
-├── lib/
-│   └── acm.jar
-├── src/
-│   └── ppPackage/
-|        ├── ppBall.java
-│       ├── ppPaddle.java
-│       ├── ppPaddleAgent.java
-│       ├── ppSim.java
-│       ├── ppSimParams.java
-│       ├── ppTable.java
-│       └── ppScoreBoard.java
-├── bin/ (will be created during compilation)
-└── README.md
+Compilation Command:
+
+For macOS/Linux:
+javac -cp "lib/acm.jar" -d bin src/ppPackage/*.java
+
+For Windows:
+javac -cp "lib\acm.jar" -d bin src\ppPackage\*.java
+
+Run Command:
+
+For macOS/Linux:
+java -cp "bin:lib/acm.jar" ppPackage.ppSim
+
+For Windows:
+java -cp "bin;lib\acm.jar" ppPackage.ppSim
 
 🎮 Game Controls
 Player Paddle (Right Paddle):
